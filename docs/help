@@ -1,0 +1,33 @@
+Usage: htree [options] [value]
+       htree [options=value]
+
+Options:
+  # SYSTEM
+  -v, --version             Print htree version.
+  -h, --help                Print this help.
+  -o, --output              Output file (default STDOUT).
+  --force                   Overwrite output file.
+
+  # BOOLEAN
+  -f, --folder              Only folder.
+  -s, --show-dir            Show current directory.
+  --gap                     Add a space before the directory/file.
+  --concat-length           The repeat times of concat string.
+  --suffix                  Add a suffix to a directory.
+  --order                   Rearrangement the order of dirs and files.
+  --size                    Show the size of files.
+  --sort                    Sort dir/file by default. [deprecated]
+  --dot                     Include the directory begins with `.`.
+  --underline               Include the directory begins with `_`.
+  # Use prefix `--no-` to set a false value, e.g. `--no-size`.
+
+  # VALUE
+  -d, --dir                 Htree directory.
+  -m, --max-depth           Max depth for directory.
+  -i, --ignore              Ignore list, use comma to seperate them.
+  --exclude                 Exclude the directory depending on RegExp.
+  --str-suffix              The suffix string for directory.
+  --str-comment             The `comment` string.
+  --pad-length              The length of `pad-end`.
+
+For more information, please visit the `README.md` of htree.
